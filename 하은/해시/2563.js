@@ -2,30 +2,36 @@ const solution = () => {
     const fs = require('fs');
     const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 
-    const input = fs.readFileSync(filePath, 'utf-8').trim().split('\n');
+    const N = Number(fs.readFileSync(filePath, 'utf-8').trim());
+    const min = 10 ** (N - 1);
+    const max = 10 ** N - 1;
 
-    //색종이 개수
-    const N = Number(input[0]);
+    //소수 확인 테이블
+    const prime = new Array(10 ** N).fill(true);
+    prime[1] = false;
 
-    // 도화지 배열
-    const paper = Array.from({ length: 100 }, () => Array(100).fill(false));
+    //에라토스테네스의 체
+    for (let i = 2; i <= max; i++) {
+        if (!prime[i]) continue;
 
-    //색종이 개수만큼 for문
-    let cnt = 0;
-    for (let i = 1; i <= N; i++) {
-        const [x, y] = input[i].split(' ').map(Number);
-
-        for (let curY = y; curY < y + 10; curY++) {
-            for (let curX = x; curX < x + 10; curX++) {
-                if (!paper[curY][curX]) {
-                    paper[curY][curX] = true;
-                    cnt++;
-                }
-            }
+        for (let j = i * 2; j <= max; j += i) {
+            prime[j] = false;
         }
     }
 
-    return cnt;
+    const res = [];
+
+    //해당 자릿수만 확인
+    for (let num = min; num <= max; num++) {
+        //자릿수만큼 돌기
+        for (let _num = num; _num >= 1; _num = Math.floor(_num / 10)) {
+            // N의 자릿수
+            if (!prime[_num]) break;
+            if (_num < 10) res.push(num);
+        }
+    }
+
+    return res.join('\n');
 };
 
 console.log(solution());
