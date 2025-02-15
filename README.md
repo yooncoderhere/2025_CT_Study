@@ -38,6 +38,14 @@
 | 1920 수 찾기 | 10026 적록색약 | 13414 수강신청 | 1439 뒤집기 |  11004 K번째 수 | 14271 그리드 게임  | 992. Subarrays with K Different Integers
 | 1764 듣보잡 | 10816 숫자 카드 2 | 12891 DNA 비밀번호 | 11728 배열 합치기 |  16139 인간-컴퓨터 상호작용  | 2179 비슷한 단어  | 3. Longest Substring Without Repeating Characters
 
+### Queue / PriorityQueue
+
+> **3주차** (2/1 ~ 2/7)
+
+| 2월 17일 (월) | 2월 18일 (화) | 2월 19일 (수) | 2월 20일 (목) | 2월 21일 (금) | 2월 22일 (토) |
+|-------------|-------------|--------------|-------------|-------------|--------------|
+|[18258 큐2](https://www.acmicpc.net/problem/18258)     |[2164 카드2](https://www.acmicpc.net/problem/2164)      |[1927 최소 힙](https://www.acmicpc.net/problem/1927)       |[2075 N번째 큰 수](https://www.acmicpc.net/problem/2075) |[11279 최대 힙](https://www.acmicpc.net/problem/11279) | 복습?
+|[11286 절댓값 힙](https://www.acmicpc.net/problem/11286) |[1715 카드 정렬하기](https://www.acmicpc.net/problem/1715)|[13975 파일 합치기 3](https://www.acmicpc.net/problem/13975)|[1655 가운데를 말해요](https://www.acmicpc.net/problem/1655) |[1781 컵라면](https://www.acmicpc.net/problem/1781)    | 복습?
 
 ### 1주차 ~ 5주차 과제 진행도 💪🏻
 
