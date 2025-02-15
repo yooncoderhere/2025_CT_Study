@@ -12,8 +12,8 @@ stack = deque()
 
 for i in range(n):
     while stack and (stack[-1][0] < arr[i]):
-        tmp, idx = stack.pop()
         NGE[idx] = arr[i]
+        tmp, idx = stack.pop()
     stack.append([arr[i], i])
 
 print(*NGE)
