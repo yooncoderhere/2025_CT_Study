@@ -32,21 +32,29 @@
 
 > **1주차** (2/1 ~ 2/7)
 
-| 2월 1일 (토) | 2월 3일 (월) | 2월 4일 (화) | 2월 5일 (수) | 2월 6일 (목) | 2월 7일 (금) | 2월 8일 (토)
+| 2월 1일 (토) | 2월 3일 (월) | 2월 4일 (화) | 2월 5일 (수) | 2월 6일 (목) | 2월 7일 (금) | 2월 8일 (토)|
 |-------------|-------------|-------------|-------------|-------------|-------------|-------------| 
-| 10815 숫자 카드 | 14425 문자열 집합 | 2910 빈도 정렬 | 2563 색종이 | 1269 대칭 차집합  |  2023 신기한 소수  | 128. Longest Consecutive Sequence
-| 1920 수 찾기 | 10026 적록색약 | 13414 수강신청 | 1439 뒤집기 |  11004 K번째 수 | 14271 그리드 게임  | 992. Subarrays with K Different Integers
-| 1764 듣보잡 | 10816 숫자 카드 2 | 12891 DNA 비밀번호 | 11728 배열 합치기 |  16139 인간-컴퓨터 상호작용  | 2179 비슷한 단어  | 3. Longest Substring Without Repeating Characters
+| 10815 숫자 카드 | 14425 문자열 집합 | 2910 빈도 정렬 | 2563 색종이 | 1269 대칭 차집합  |  2023 신기한 소수  | 128. Longest Consecutive Sequence|
+| 1920 수 찾기 | 10026 적록색약 | 13414 수강신청 | 1439 뒤집기 |  11004 K번째 수 | 14271 그리드 게임  | 992. Subarrays with K Different Integers|
+| 1764 듣보잡 | 10816 숫자 카드 2 | 12891 DNA 비밀번호 | 11728 배열 합치기 |  16139 인간-컴퓨터 상호작용  | 2179 비슷한 단어  | 3. Longest Substring Without Repeating Characters|
 
-### Queue / PriorityQueue
+### 3주차 (2/17 ~ 2/22)
+> Queue / PriorityQueue / TwoPointer
 
-> **3주차** (2/1 ~ 2/7)
-
-|난이도| 2월 17일 (월) | 2월 18일 (화) | 2월 19일 (수) | 2월 20일 (목) | 2월 21일 (금) | 2월 22일 (토) |
-|----|-------------|-------------|--------------|-------------|-------------|--------------|
-| 중 |[18258 큐2](https://www.acmicpc.net/problem/18258)    |[2164 카드2](https://www.acmicpc.net/problem/2164)      | [2075 N번째 큰 수](https://www.acmicpc.net/problem/2075) |[11279 최대 힙](https://www.acmicpc.net/problem/11279) | 미정 | 미정 |
-| 상 |[11286 절댓값 힙](https://www.acmicpc.net/problem/11286) |[1715 카드 정렬하기](https://www.acmicpc.net/problem/1715)| [1655 가운데를 말해요](https://www.acmicpc.net/problem/1655) |[1781 컵라면](https://www.acmicpc.net/problem/1781)    | 미정 | 미정 |
+| 2월 17일 (월) | 2월 18일 (화) | 2월 19일 (수) | 2월 20일 (목) | 2월 21일 (금)                                         | 2월 22일 (토)                                         |
+|-------------|-------------|--------------|-------------|----------------------------------------------------|----------------------------------------------------|
+|[18258 큐2](https://www.acmicpc.net/problem/18258)    |[2164 카드2](https://www.acmicpc.net/problem/2164)      | [2075 N번째 큰 수](https://www.acmicpc.net/problem/2075) |[11279 최대 힙](https://www.acmicpc.net/problem/11279) | [2230 수 고르기](https://www.acmicpc.net/problem/2230) |[1644 소수의 연속합](https://www.acmicpc.net/problem/1644)|
+|[11286 절댓값 힙](https://www.acmicpc.net/problem/11286) |[1715 카드 정렬하기](https://www.acmicpc.net/problem/1715)| [1655 가운데를 말해요](https://www.acmicpc.net/problem/1655) |[1781 컵라면](https://www.acmicpc.net/problem/1781) | [1806 부분합](https://www.acmicpc.net/problem/1806)   |[2003 수들의 합 2](https://www.acmicpc.net/problem/2003)|
 - 중복유형으로 삭제: ~~[1927 최소 힙](https://www.acmicpc.net/problem/1927)~~, ~~[13975 파일 합치기 3](https://www.acmicpc.net/problem/13975)~~
+- 남은2일 투포인터 문제 추가
+
+### 4주차 (2/24 ~ 3/1)
+> TwoPointer
+
+| 2월 24일 (월) | 2월 25일 (화) | 2월 26일 (수) | 2월 27일 (목) | 2월 28일 (금) | 3월 1일 (토) |
+|-------------|--------------|-------------|-------------|--------------|------------|
+|[13144 List of Unique Numbers](https://www.acmicpc.net/problem/13144)         |[2531 회전 초밥](https://www.acmicpc.net/problem/2531)       |[2461 대표 선수](https://www.acmicpc.net/problem/2461)  |[20366 같이 눈사람 만들래?](https://www.acmicpc.net/problem/20366) |미정|미정|
+|[22862 가장 긴 짝수 연속한 부분 수열 (large)](https://www.acmicpc.net/problem/22862) |[20922 겹치는 건 싫어](https://www.acmicpc.net/problem/20922) |[2283 구간 자르기](https://www.acmicpc.net/problem/2283) |미정                                                           |미정|미정|
 
 ### 1주차 ~ 5주차 과제 진행도 💪🏻
 
