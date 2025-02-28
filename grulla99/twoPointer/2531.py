@@ -15,7 +15,6 @@ for i in range(n):
         temp = len(set(arr[i:i+k] + [c]))
     else:
         temp = len(set(arr[i:n] + arr[:(i+k)%n] + [c]))
-    print(temp)
     result = max(result, temp)
 
 print(result)
