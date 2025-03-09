@@ -35,42 +35,34 @@ class S2473 {
             return "${nums[len - 3]} ${nums[len - 2]} ${nums[len - 1]}"
         }
 
-        var min = Math.abs(nums[0] + nums[1] + nums[2])
+        var min = Math.abs(nums[0].toLong() + nums[1] + nums[2])
         val result = intArrayOf(nums[0], nums[1], nums[2])
         for (fix1 in 0 until len - 2) {
             for (fix2 in fix1+1 until len - 1) {
-                val twoSum = nums[fix1] + nums[fix2]
+                val twoSum = (nums[fix1] + nums[fix2]).toLong()
                 var l = fix2 + 1
                 var r = len - 1
-                while (l < r) {
+                while (l <= r) {
                     val m = (l + r) / 2
                     val sum = twoSum + nums[m]
-                    if (sum == 0) {
+                    if (sum == 0L) {
                         return "${nums[fix1]} ${nums[fix2]} ${nums[m]}"
-                    } else if (sum < 0) {
+                    } else if (sum < 0L) {
+                        if (-sum < min) {
+                            min = -sum
+                            result[0] = nums[fix1]
+                            result[1] = nums[fix2]
+                            result[2] = nums[m]
+                        }
                         l = m + 1
                     } else {
+                        if (sum < min) {
+                            min = sum
+                            result[0] = nums[fix1]
+                            result[1] = nums[fix2]
+                            result[2] = nums[m]
+                        }
                         r = m - 1
-                    }
-                }
-
-                if (l > fix2) {
-                    val lSum = abs(twoSum + nums[l])
-                    if (lSum < min) {
-                        min = lSum
-                        result[0] = nums[fix1]
-                        result[1] = nums[fix2]
-                        result[2] = nums[l]
-                    }
-                }
-
-                if (r < len) {
-                    val rSum = abs(twoSum + nums[r])
-                    if (rSum < min) {
-                        min = rSum
-                        result[0] = nums[fix1]
-                        result[1] = nums[fix2]
-                        result[2] = nums[r]
                     }
                 }
             }
