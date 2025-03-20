@@ -18,14 +18,14 @@ def preorder(root):
 
 def inorder(root):
     if root != '.':
-        inorder(tree[root][0])  # left
+        inorder(tree[root][0])
         print(root, end='')
-        inorder(tree[root][1])  # right
+        inorder(tree[root][1])
 
 def postorder(root):
     if root != '.':
-        postorder(tree[root][0])  # left
-        postorder(tree[root][1])  # right
+        postorder(tree[root][0])
+        postorder(tree[root][1])
         print(root, end='')
 
 preorder('A')
