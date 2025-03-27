@@ -1,34 +1,21 @@
-import sys
-sys.setrecursionlimit(10**6)
+from sys import stdin
 
-r, c = map(int, input().split())
+R, C = map(int, stdin.readline().split())
+board = [list(stdin.readline().rstrip()) for _ in range(R)]
 
-g = [list(input().strip()) for _ in range(r)]
+def dfs(a, b):
+    q = {(a, b, board[a][b])}
+    r = 0
 
-def inRange(x, y):
-    return 0 <= x < r and 0 <= y < c
+    while q:
+        x, y, history = q.pop()
+        r = max(r, len(history))
+        if r == 26 : return 26
+        for dx, dy in ((0, 1), (0, -1), (1, 0), (-1, 0)):
+            nx, ny = x + dx, y + dy
+            if not (0<=nx<R and 0<=ny<C) or board[nx][ny] in history: continue
+            q.add((nx, ny, history + board[nx][ny]))
 
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
+    return r
 
-max_cnt = 0
-
-alpa = set()
-
-def dfs(x, y, alpa, cnt):
-    global max_cnt
-    max_cnt = max(max_cnt, cnt)
-
-    for i in range(4):
-        nx = x + dx[i]
-        ny = y + dy[i]
-
-        if inRange(nx, ny):
-            if g[nx][ny] not in alpa:
-                alpa.add(g[nx][ny])
-                dfs(nx, ny, alpa, cnt + 1)
-                alpa.remove(g[nx][ny]) # 스택이니까
-
-dfs(0, 0, {g[0][0]}, 1)
-
-print(max_cnt)
+print(dfs(0,0))
